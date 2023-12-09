@@ -31,7 +31,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001402115130').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '2057170163').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '2057170163 , 1532265830').split()]
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '2057170163 1532265830').split()]
 auth_channel = environ.get('AUTH_CHANNEL', '-1002015091563')
 auth_grp = environ.get('AUTH_GROUP', '-1002101524343')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
@@ -49,7 +49,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
 VERIFY = bool(environ.get('VERIFY', True)) 
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'shareus.io')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'http://shareus.io')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'z8J99Nke1wNxdm3wyj1G7pWxAaI3')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]

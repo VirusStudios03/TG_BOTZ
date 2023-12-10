@@ -71,7 +71,7 @@ SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)
 CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "<b>
 ⚡️JOIN : [@Virus_Studios] 
 
-<a href=https://t.me/Virus_Studios>{caption}</a>
+<a href=https://t.me/Virus_Studios>{file_caption}</a>
 
 ⚙️ SIZE ➠ : {file_size}
 </b>")
